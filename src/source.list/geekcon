@@ -1,0 +1,2 @@
+#deb http://octopi.local/raspbian/ wheezy main contrib non-free rpi
+deb http://localhost/raspbian/ wheezy main contrib non-free rpi

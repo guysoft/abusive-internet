@@ -1,0 +1,3 @@
+Things to clear up out of geekcon branch
+1. hotaptd should be downloaded from the internet and not local
+2. sources list overwrite should be removed

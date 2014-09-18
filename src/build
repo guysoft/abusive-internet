@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+OCTOPI_PATH=$(dirname $(realpath -s $0))
+source $OCTOPI_PATH/config
+source $OCTOPI_PATH/abusive-internet
