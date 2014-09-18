@@ -18,7 +18,7 @@ Requirements
 Build abusive-internet From within abusive-internet / Raspbian / Debian / Ubuntu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-abusive-internet can be built from Debian, Ubuntu, Raspbian, or even OctoPi.
+abusive-internet can be built from Debian, Ubuntu, Raspbian, or even abusive-internet.
 Build requires about 3.5 GB of free space available.
 You can build it by issuing the following commands::
 
