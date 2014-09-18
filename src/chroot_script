@@ -28,15 +28,18 @@ unpackHome
 unpackBoot
 
 #set interfaces
-cp -v /configs /etc/network/interfaces
+cp -v /filesystem/root/configs/interfaces /etc/network/interfaces
 
 apt-get update
 
 apt-get remove -y --purge scratch squeak-plugins-scratch squeak-vm wolfram-engine
 
 #install and set up ethernet dns mask
-#apt-get -y install dnsmasq
+apt-get -y install dnsmasq
 apt-get -y install squid3 iptables imagemagick apache2 perl hostapd bridge-utils
+
+#kill stupid squid3 that is eating cpu
+sudo killall squid3
 
 echo net.ipv4.ip_forward=1 >> /etc/sysctl.conf
 
