@@ -9,15 +9,26 @@ iface wlan0 inet static
   netmask 255.255.255.0
 broadcast 192.168.42.255
 #gateway 192.168.42.1
+pre-up /home/pi/scripts/pre-up.sh
 
+allow-hotplug wlan1
+iface wlan1 inet static
+address 192.168.43.1
+netmask 255.255.255.0
+broadcast 192.168.43.255
 
-#iface default inet dhcp
+allow-hotplug wlan2
+iface wlan2 inet static
+address 192.168.44.1
+netmask 255.255.255.0
+broadcast 192.168.44.255
 
-#iface wlan0 inet static
-#address 192.168.42.1
-#netmask 255.255.255.0
-#bridge_ports eth0 wlan0
-#
+allow-hotplug wlan3
+iface wlan3 inet static
+address 192.168.45.1
+netmask 255.255.255.0
+broadcast 192.168.45.255
+
 #auto eth0:1
 #allow-hotplug eth0:1
 #iface eth0:1 inet static
@@ -33,4 +44,3 @@ broadcast 192.168.42.255
 #  netmask 255.255.255.0
 #  gateway 10.10.10.6
 
-pre-up iptables-restore < /etc/iptables.rules
